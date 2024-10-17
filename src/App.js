@@ -22,6 +22,9 @@ function App() {
           <Route path="/music" element={<MusicShowcase />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* Fallback route for unmatched paths */}
+          <Route path="*" element={<Hero />} />
         </Routes>
 
         <Footer />
@@ -31,4 +34,5 @@ function App() {
 }
 
 export default App;
+
 
