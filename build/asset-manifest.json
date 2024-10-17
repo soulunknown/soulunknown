@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/soul-unknown/static/css/main.484e5505.css",
-    "main.js": "/soul-unknown/static/js/main.e675501b.js",
-    "static/js/488.a9b3fcc2.chunk.js": "/soul-unknown/static/js/488.a9b3fcc2.chunk.js",
-    "static/media/nightsky2.jpg": "/soul-unknown/static/media/nightsky2.b14a2d94ed3864b254e5.jpg",
-    "static/media/Steampunk.jpeg": "/soul-unknown/static/media/Steampunk.86a8aadc69516c7f41df.jpeg",
-    "static/media/Butter.jpeg": "/soul-unknown/static/media/Butter.798321047b5b2c6eea88.jpeg",
-    "static/media/indie waters.jpg": "/soul-unknown/static/media/indie waters.2dac452d9f85332b9126.jpg",
-    "static/media/ff.webp": "/soul-unknown/static/media/ff.db4eaa269100213ec5df.webp",
-    "static/media/soulunknowngraffi.jpg": "/soul-unknown/static/media/soulunknowngraffi.9ac97cf1a818eb9ea0f9.jpg",
-    "static/media/ttinms.webp": "/soul-unknown/static/media/ttinms.da2167cc41db8dd7f6ef.webp",
-    "static/media/wfu.jpeg": "/soul-unknown/static/media/wfu.fbebf01305f37f8c25fa.jpeg",
-    "index.html": "/soul-unknown/index.html",
-    "main.484e5505.css.map": "/soul-unknown/static/css/main.484e5505.css.map",
-    "main.e675501b.js.map": "/soul-unknown/static/js/main.e675501b.js.map",
-    "488.a9b3fcc2.chunk.js.map": "/soul-unknown/static/js/488.a9b3fcc2.chunk.js.map"
+    "main.css": "/soulunknown/static/css/main.8c6924b2.css",
+    "main.js": "/soulunknown/static/js/main.276f9024.js",
+    "static/js/488.a9b3fcc2.chunk.js": "/soulunknown/static/js/488.a9b3fcc2.chunk.js",
+    "static/media/nightsky2.jpg": "/soulunknown/static/media/nightsky2.b14a2d94ed3864b254e5.jpg",
+    "static/media/Steampunk.jpeg": "/soulunknown/static/media/Steampunk.86a8aadc69516c7f41df.jpeg",
+    "static/media/Butter.jpeg": "/soulunknown/static/media/Butter.798321047b5b2c6eea88.jpeg",
+    "static/media/indie waters.jpg": "/soulunknown/static/media/indie waters.2dac452d9f85332b9126.jpg",
+    "static/media/ff.webp": "/soulunknown/static/media/ff.db4eaa269100213ec5df.webp",
+    "static/media/soulunknowngraffi.jpg": "/soulunknown/static/media/soulunknowngraffi.9ac97cf1a818eb9ea0f9.jpg",
+    "static/media/ttinms.webp": "/soulunknown/static/media/ttinms.da2167cc41db8dd7f6ef.webp",
+    "static/media/wfu.jpeg": "/soulunknown/static/media/wfu.fbebf01305f37f8c25fa.jpeg",
+    "index.html": "/soulunknown/index.html",
+    "main.8c6924b2.css.map": "/soulunknown/static/css/main.8c6924b2.css.map",
+    "main.276f9024.js.map": "/soulunknown/static/js/main.276f9024.js.map",
+    "488.a9b3fcc2.chunk.js.map": "/soulunknown/static/js/488.a9b3fcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.484e5505.css",
-    "static/js/main.e675501b.js"
+    "static/css/main.8c6924b2.css",
+    "static/js/main.276f9024.js"
   ]
 }
