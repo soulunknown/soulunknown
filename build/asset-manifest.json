@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/soul-unknown/static/css/main.484e5505.css",
-    "main.js": "/soul-unknown/static/js/main.83e579b2.js",
+    "main.js": "/soul-unknown/static/js/main.7f03d00a.js",
     "static/js/488.a9b3fcc2.chunk.js": "/soul-unknown/static/js/488.a9b3fcc2.chunk.js",
     "static/media/nightsky2.jpg": "/soul-unknown/static/media/nightsky2.b14a2d94ed3864b254e5.jpg",
     "static/media/Steampunk.jpeg": "/soul-unknown/static/media/Steampunk.86a8aadc69516c7f41df.jpeg",
@@ -13,11 +13,11 @@
     "static/media/wfu.jpeg": "/soul-unknown/static/media/wfu.fbebf01305f37f8c25fa.jpeg",
     "index.html": "/soul-unknown/index.html",
     "main.484e5505.css.map": "/soul-unknown/static/css/main.484e5505.css.map",
-    "main.83e579b2.js.map": "/soul-unknown/static/js/main.83e579b2.js.map",
+    "main.7f03d00a.js.map": "/soul-unknown/static/js/main.7f03d00a.js.map",
     "488.a9b3fcc2.chunk.js.map": "/soul-unknown/static/js/488.a9b3fcc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.484e5505.css",
-    "static/js/main.83e579b2.js"
+    "static/js/main.7f03d00a.js"
   ]
 }

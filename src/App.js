@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; // Ensure useState is imported
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,25 +10,25 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
-
-  const handleSectionChange = (section) => {
-    setActiveSection(section);
-  };
-
   return (
-    <div className="App">
-      <Navbar onSectionChange={handleSectionChange} />
-      
-      {activeSection === 'home' && <Hero />}
-      {activeSection === 'about' && <About />}
-      {activeSection === 'music' && <MusicShowcase />}
-      {activeSection === 'events' && <Events />}
-      {activeSection === 'contact' && <Contact />}
-      
-      <Footer />
-    </div>
+    <Router basename="/soul-unknown">
+      <div className="App">
+        <Navbar />
+
+        {/* Define Routes for each section */}
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/music" element={<MusicShowcase />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
