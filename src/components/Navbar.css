@@ -1,77 +1,107 @@
-/* src/components/Navbar.css */
+/* General Navbar styles for all screen sizes */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #222;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar-logo {
-    width: 150px; /* Adjust the width as needed to make it smaller */
-    border-radius: 300px;
-    height: auto; /* Keeps the aspect ratio */
-    filter: drop-shadow(0 0 20px #800080);
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .nav-links a:hover {
-    color: #ff6347; /* Accent color for hover effect */
-  }
-  .nav-links button {
-    background: linear-gradient(135deg, #6a1b9a, #ff6347); /* Gradient background */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.nav-links button:hover {
-    transform: scale(1.1); /* Scales the button up slightly on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Makes shadow deeper on hover for emphasis */
+.navbar-logo {
+  width: 150px; /* Adjust the width as needed to make it smaller */
+  border-radius: 300px;
+  height: auto; /* Keeps the aspect ratio */
+  filter: drop-shadow(0 0 20px #800080);
 }
 
-.nav-links button:active {
-    transform: scale(0.95); /* Shrinks slightly when clicked for visual feedback */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+/* Styles for the navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links a:hover {
-    color: #ff6347; /* Accent color for hover effect */
+  color: #ff6347; /* Accent color for hover effect */
+}
+
+/* Button styles */
+.nav-links button {
+  background: linear-gradient(135deg, #6a1b9a, #ff6347); /* Gradient background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.nav-links button:hover {
+  transform: scale(1.1); /* Scales the button up slightly on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Makes shadow deeper on hover for emphasis */
+}
+
+.nav-links button:active {
+  transform: scale(0.95); /* Shrinks slightly when clicked for visual feedback */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack the navbar on top of each other */
+      align-items: flex-start; /* Align items to the start */
+      padding: 10px 10px; /* Reduce padding for smaller devices */
+  }
+
+  .navbar-logo {
+      width: 100px; /* Make logo smaller on mobile */
+  }
+
+  .nav-links {
+      flex-direction: column; /* Stack the navigation links vertically */
+      gap: 10px; /* Reduce the gap between links */
+      width: 100%; /* Make links take full width */
+      align-items: flex-start; /* Align links to the start */
+      margin-top: 10px; /* Add some margin at the top */
+  }
+
+  .nav-links li {
+      display: block; /* Make each link take full width */
+  }
+
+  .nav-links a {
+      font-size: 14px; /* Make the font smaller for mobile */
+      padding: 8px 0; /* Add padding around the links */
+      display: block; /* Make links take full width */
+      text-align: left; /* Align text to the left */
+  }
+
+  .nav-links button {
+      width: 100%; /* Make the button full width */
+      padding: 10px 0; /* Reduce button padding for mobile */
+      font-size: 14px; /* Smaller font size for mobile */
+      text-align: center; /* Center text on button */
+  }
 }

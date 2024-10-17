@@ -1,28 +1,46 @@
 .hero {
-    .hero {
-        background-image: url('./wfu.jpeg'); /* Image URL */
-        background-size: contain; /* Make sure the entire image fits inside the section */
-        background-position: center; /* Center the image */
-        background-repeat: repeat; /* Prevent the image from repeating */
-        
-        width: 50px; /* Small width */
-        height: 50px; /* Small height */
-        margin: 20px auto; /* Center it horizontally */
-        
-        border: 400px solid rgba(227, 13, 191, 0.857); /* Thin border */
-        border-radius: 100px; /* Slightly rounded corners */
-        box-shadow: 0 400 400px rgba(235, 14, 217, 0.5); /* Soft shadow for depth */
-    }
+    background-image: url("./wfu.jpeg"); /* Image URL */
+    background-size: contain; /* Make sure the entire image fits inside the section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     
-}
-
-
-
-.hero p {
-    font-size: 12px; /* Smaller paragraph size */
-    line-height: 1.2; /* Tighter line spacing for the smaller area */
-    max-width: 180px; /* Restricts the width of paragraph text */
+    width: 300px; /* Adjusted width for desktop */
+    height: 300px; /* Adjusted height for desktop */
+    margin: 20px auto; /* Center it horizontally */
+    
+    border: 10px solid rgba(228, 10, 191, 0.553); /* Thin border for desktop */
+    border-radius: 100px; /* Rounded corners */
+    box-shadow: 0 3px 40px rgba(9, 0, 11, 0.949); /* Soft shadow for depth */
+    
+    display: flex; /* Flexbox to align the content inside */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    text-align: center;
+    padding: 1px;
+  }
+  
+  .hero p {
+    font-size: 16px; /* Regular paragraph size for desktop */
+    line-height: 1.4; /* Line spacing for readability */
+    max-width: 220px; /* Restricts the width of paragraph text */
     margin: 0; /* Remove automatic margin */
-    text-align: right; /* Left-align the paragraph */
-}
-
+    text-align: center; /* Center-align the paragraph */
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (max-width: 768px) {
+    .hero {
+      width: 200px; /* Smaller width for mobile */
+      height: 200px; /* Smaller height for mobile */
+      border: 5px solid rgba(227, 13, 191, 0.857); /* Thinner border on mobile */
+      box-shadow: 0 0 10px rgba(235, 14, 217, 0.5); /* Smaller shadow */
+    }
+  
+    .hero p {
+      font-size: 14px; /* Smaller paragraph size for mobile */
+      line-height: 1.3; /* Tighter line spacing */
+      max-width: 180px; /* Restrict the width further on mobile */
+      text-align: center; /* Keep the text centered on mobile */
+    }
+  }
+  
