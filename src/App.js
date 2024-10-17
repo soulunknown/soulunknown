@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react'; // Ensure useState is imported
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -16,19 +16,17 @@ function App() {
   };
 
   return (
-    <Router basename="/soul-unknown">
-      <div className="App">
-        <Navbar onSectionChange={handleSectionChange} />
-
-        {activeSection === 'home' && <Hero />}
-        {activeSection === 'about' && <About />}
-        {activeSection === 'music' && <MusicShowcase />}
-        {activeSection === 'events' && <Events />}
-        {activeSection === 'contact' && <Contact />}
-
-        <Footer />
-      </div>
-    </Router>
+    <div className="App">
+      <Navbar onSectionChange={handleSectionChange} />
+      
+      {activeSection === 'home' && <Hero />}
+      {activeSection === 'about' && <About />}
+      {activeSection === 'music' && <MusicShowcase />}
+      {activeSection === 'events' && <Events />}
+      {activeSection === 'contact' && <Contact />}
+      
+      <Footer />
+    </div>
   );
 }
 
