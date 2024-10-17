@@ -1,5 +1,4 @@
-// src/App.js
-import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -17,17 +16,19 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Navbar onSectionChange={handleSectionChange} />
-      
-      {activeSection === 'home' && <Hero />}
-      {activeSection === 'about' && <About />}
-      {activeSection === 'music' && <MusicShowcase />}
-      {activeSection === 'events' && <Events />}
-      {activeSection === 'contact' && <Contact />}
-      
-      <Footer />
-    </div>
+    <Router basename="/soul-unknown">
+      <div className="App">
+        <Navbar onSectionChange={handleSectionChange} />
+
+        {activeSection === 'home' && <Hero />}
+        {activeSection === 'about' && <About />}
+        {activeSection === 'music' && <MusicShowcase />}
+        {activeSection === 'events' && <Events />}
+        {activeSection === 'contact' && <Contact />}
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
