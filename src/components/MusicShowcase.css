@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+.music-showcase {
+  background-color: #000; /* Optional: set a black background for contrast */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.music-showcase h2 {
+  color: #ff2b05; /* Change this to any color you prefer for the heading */
+  font-size: 32px;
+  font-family: 'Sixtyfour Convergence', sans-serif; /* Correct the font to use the imported one */
+  margin-bottom: 20px;
+}
+
+.music-showcase p {
+  color: #fff; /* Change this to adjust the color of paragraph text */
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Sixtyfour Convergence', sans-serif; /* Apply the font here as well if desired */
+}

@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+// src/App.js
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import MusicShowcase from './components/MusicShowcase';
+import Events from './components/Events';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar onSectionChange={handleSectionChange} />
+      
+      {activeSection === 'home' && <Hero />}
+      {activeSection === 'about' && <About />}
+      {activeSection === 'music' && <MusicShowcase />}
+      {activeSection === 'events' && <Events />}
+      {activeSection === 'contact' && <Contact />}
+      
+      <Footer />
     </div>
   );
 }

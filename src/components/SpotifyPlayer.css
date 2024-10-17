@@ -1,0 +1,170 @@
+/* src/components/SpotifyPlayer.css */
+.spotify-player-container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    background: #07023c;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .spotify-player-container h2 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #c8b7d0;
+  }
+  
+  .spotify-track1 {
+    margin: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.77);  
+    border: 3px solid rgba(208, 66, 10, 0.857);  
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgb(141, 182, 222);  
+    background-image: url('nightsky2.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Ensures the content is properly positioned over the background */
+    color: #fff; /* Ensures text is visible over the background */
+    animation: neonFlicker 20s infinite;
+  }
+  .spotify-track2 {
+    margin: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.77);  
+    border: 3px solid rgba(74, 4, 135, 0.857);  
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgb(159, 15, 145);  
+    background-image: url('Butter.jpeg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Ensures the content is properly positioned over the background */
+    color: #fff; /* Ensures text is visible over the background */
+  }
+
+  /* Apply the neon animation to spotify-track3 */
+  .spotify-track3 {
+    margin: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.77);
+    border: 3px solid rgba(253, 214, 19, 0.857);
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgb(235, 14, 14);
+    background-image: url('Steampunk.jpeg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #9a12a9;
+     /* Applying the flicker animation */
+  }
+
+  .spotify-track5 {
+    margin: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.77);
+    border: 3px solid rgba(74, 4, 135, 0.857);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(88, 146, 177);
+    background-image: url('indie\ waters.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+   
+  
+
+  }
+  .spotify-track4 {
+    margin: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.77);
+    border: 3px solid rgba(74, 4, 135, 0.857);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(88, 146, 177);
+    background-image: url('ff.webp'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+   
+  
+
+  }
+  .spotify-track6 {
+    margin: 100px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.77);
+    border: 3px solid rgba(74, 4, 135, 0.857);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(88, 146, 177);
+    background-image: url('ttinms.webp'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+   
+  
+
+  }
+  @keyframes neonFlicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      box-shadow: 0 200px 200px rgba(6, 95, 103, 0.817), 0 0 20px rgba(74, 4, 135, 1), 0 0 30px rgba(74, 4, 135, 1), 0 0 40px rgba(74, 4, 135, 1), 0 0 50px rgba(74, 4, 135, 1);
+      border-color: rgba(239, 230, 151, 0.857);
+    }
+    20%, 24%, 55% {
+      box-shadow: none;
+      border-color: rgba(230, 239, 192, 0.999);
+    }
+  }
+  
+  
+  @keyframes dramaticSeaBobbing {
+    0% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    15% {
+      transform: translate(30px, 10px) rotate(3deg);
+    }
+    30% {
+      transform: translate(-30px, 20px) rotate(-3deg);
+    }
+    45% {
+      transform: translate(30px, 30px) rotate(5deg);
+    }
+    60% {
+      transform: translate(60px, 15px) rotate(-4deg);
+    }
+    75% {
+      transform: translate(10px, 50px) rotate(4deg);
+    }
+    90% {
+      transform: translate(50px, 25px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+  }
+  .spotify-iframe {
+ 
+    border: none;
+    width: 100%;
+    height: 300px;
+  }
+  .spotify-iframe1 {
+    border: none;
+    width: 100%;
+    height: 300px;
+   
+  /* Applying the bobbing animation */
+  }
+  .spotify-iframe5 {
+    border: none;
+    width: 100%;
+    height: 300px;
+    animation:dramaticSeaBobbing 30s infinite ease-in-out; /* Applying the bobbing animation */
+  }

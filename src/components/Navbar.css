@@ -1,0 +1,77 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-logo {
+    width: 150px; /* Adjust the width as needed to make it smaller */
+    border-radius: 300px;
+    height: auto; /* Keeps the aspect ratio */
+    filter: drop-shadow(0 0 20px #800080);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6347; /* Accent color for hover effect */
+  }
+  .nav-links button {
+    background: linear-gradient(135deg, #6a1b9a, #ff6347); /* Gradient background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.nav-links button:hover {
+    transform: scale(1.1); /* Scales the button up slightly on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Makes shadow deeper on hover for emphasis */
+}
+
+.nav-links button:active {
+    transform: scale(0.95); /* Shrinks slightly when clicked for visual feedback */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Accent color for hover effect */
+}
