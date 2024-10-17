@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/soul-unknown">
+    <Router basename="/soulunknown">
       <div className="App">
         <Navbar />
 
