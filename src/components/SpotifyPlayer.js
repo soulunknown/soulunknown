@@ -89,8 +89,21 @@ function SpotifyPlayer() {
           loading="lazy"
         ></iframe>
       </div>
+       {/* Song 7 */}
+       <div className="spotify-track7">
+        <iframe
+          className="spotify-iframe"
+          title="i'll wait for you"
+          src="https://open.spotify.com/track/5OS4e6R36zopYMt7dvTZDj?si=9576fc8ef7414624"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
+    
   );
+
+
 }
 
 export default SpotifyPlayer;
