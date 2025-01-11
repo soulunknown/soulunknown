@@ -94,7 +94,7 @@ function SpotifyPlayer() {
         <iframe
           className="spotify-iframe"
           title="i'll wait for you"
-          src="https://open.spotify.com/track/5OS4e6R36zopYMt7dvTZDj?si=9576fc8ef7414624"
+          src="https://open.spotify.com/embed/track/5OS4e6R36zopYMt7dvTZDj?utm_source=generator"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>

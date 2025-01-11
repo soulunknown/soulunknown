@@ -63,14 +63,18 @@
 
 .spotify-track6 {
   border: 3px solid rgba(74, 4, 135, 0.857);
-  box-shadow: 0 0 20px rgb(88, 146, 177);
+  box-shadow: 0 0 20px rgb(18, 57, 88);
   background-image: url('ttinms.webp');
 }
-
+.spotify-track7 {
+  border: 3px solid rgba(226, 4, 167, 0.857);
+  box-shadow: 0 0 20px rgb(194, 1, 162);
+  background-image: url('iwfy.jpg');
+}
 .spotify-iframe, .spotify-iframe1, .spotify-iframe5 {
   border: none;
   width: 100%;
-  height: 300px;
+  height: 350px;
 }
 
 /* Animation Keyframes */
