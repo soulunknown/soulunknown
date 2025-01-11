@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/soulunknown/static/css/main.69764814.css",
-    "main.js": "/soulunknown/static/js/main.7270db8e.js",
+    "main.css": "/soulunknown/static/css/main.8dc2170e.css",
+    "main.js": "/soulunknown/static/js/main.72ffb12d.js",
     "static/js/488.a9b3fcc2.chunk.js": "/soulunknown/static/js/488.a9b3fcc2.chunk.js",
+    "static/media/iwfy.jpg": "/soulunknown/static/media/iwfy.5c31913ae5b272782fea.jpg",
     "static/media/nightsky2.jpg": "/soulunknown/static/media/nightsky2.b14a2d94ed3864b254e5.jpg",
     "static/media/Steampunk.jpeg": "/soulunknown/static/media/Steampunk.86a8aadc69516c7f41df.jpeg",
     "static/media/Butter.jpeg": "/soulunknown/static/media/Butter.798321047b5b2c6eea88.jpeg",
@@ -12,12 +13,12 @@
     "static/media/ttinms.webp": "/soulunknown/static/media/ttinms.da2167cc41db8dd7f6ef.webp",
     "static/media/wfu.jpeg": "/soulunknown/static/media/wfu.fbebf01305f37f8c25fa.jpeg",
     "index.html": "/soulunknown/index.html",
-    "main.69764814.css.map": "/soulunknown/static/css/main.69764814.css.map",
-    "main.7270db8e.js.map": "/soulunknown/static/js/main.7270db8e.js.map",
+    "main.8dc2170e.css.map": "/soulunknown/static/css/main.8dc2170e.css.map",
+    "main.72ffb12d.js.map": "/soulunknown/static/js/main.72ffb12d.js.map",
     "488.a9b3fcc2.chunk.js.map": "/soulunknown/static/js/488.a9b3fcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69764814.css",
-    "static/js/main.7270db8e.js"
+    "static/css/main.8dc2170e.css",
+    "static/js/main.72ffb12d.js"
   ]
 }
