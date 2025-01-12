@@ -6,7 +6,7 @@ function About() {
   return (
     <section className="about">
       <h2>About Soul Unknown</h2>
-      <p>Discover the journey of Soul Unknown, an artist who blends genres to create music that speaks to the heart.</p>
+      <p>Soul Unknown, an artist who blends genres to create music that speaks to the heart.</p>
     </section>
   );
 }
