@@ -1,29 +1,63 @@
-/* General Navbar styles for all screen sizes */
+/* ========== Base Navbar ========== */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
   background-color: #222;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
+/* Flex container for logo and hamburger */
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+/* Logo */
 .navbar-logo {
-  width: 150px; /* Adjust the width as needed to make it smaller */
-  border-radius: 300px;
-  height: auto; /* Keeps the aspect ratio */
-  filter: drop-shadow(0 0 20px #800080);
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 12px #800080);
+  transition: transform 0.3s ease;
+  margin-top: 6px;
 }
 
-/* Styles for the navigation links */
+.navbar-logo:hover {
+  transform: rotate(1deg) scale(1.02);
+}
+
+/* Smoke animation for logo */
+@keyframes logoSmokeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-40px);
+    filter: blur(8px);
+  }
+}
+
+.smoke-out {
+  animation: logoSmokeOut 0.8s ease-out forwards;
+}
+
+/* Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0 24px 16px;
+  margin: 0;
 }
 
 .nav-links li {
@@ -34,74 +68,88 @@
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  transition: color 0.3s ease;
   font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff6347; /* Accent color for hover effect */
+  color: #ff6347;
 }
 
-/* Button styles */
+/* CTA Button (optional) */
 .nav-links button {
-  background: linear-gradient(135deg, #6a1b9a, #ff6347); /* Gradient background */
-  color: #fff;
+  background: linear-gradient(135deg, #6a1b9a, #ff6347);
+  color: white;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 15px;
+  border-radius: 30px;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  border-radius: 25px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  outline: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .nav-links button:hover {
-  transform: scale(1.1); /* Scales the button up slightly on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Makes shadow deeper on hover for emphasis */
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links button:active {
-  transform: scale(0.95); /* Shrinks slightly when clicked for visual feedback */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Queries for smaller screens (mobile) */
+/* ========== Hamburger Menu ========== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .navbar {
-      flex-direction: column; /* Stack the navbar on top of each other */
-      align-items: flex-start; /* Align items to the start */
-      padding: 10px 10px; /* Reduce padding for smaller devices */
+  .navbar-logo {
+    width: 90px;
   }
 
-  .navbar-logo {
-      width: 100px; /* Make logo smaller on mobile */
+  .hamburger {
+    display: flex;
   }
 
   .nav-links {
-      flex-direction: column; /* Stack the navigation links vertically */
-      gap: 10px; /* Reduce the gap between links */
-      width: 100%; /* Make links take full width */
-      align-items: flex-start; /* Align links to the start */
-      margin-top: 10px; /* Add some margin at the top */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0 16px 20px;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links li {
-      display: block; /* Make each link take full width */
+    width: 100%;
   }
 
-  .nav-links a {
-      font-size: 14px; /* Make the font smaller for mobile */
-      padding: 8px 0; /* Add padding around the links */
-      display: block; /* Make links take full width */
-      text-align: left; /* Align text to the left */
-  }
-
+  .nav-links a,
   .nav-links button {
-      width: 100%; /* Make the button full width */
-      padding: 10px 0; /* Reduce button padding for mobile */
-      font-size: 14px; /* Smaller font size for mobile */
-      text-align: center; /* Center text on button */
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px 0;
   }
 }

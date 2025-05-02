@@ -1,44 +1,49 @@
 .spotify-player-container {
-  margin: 20px auto;
-  max-width: 800px;
+  margin: 40px auto;
+  max-width: 900px;
   text-align: center;
   background: #07023c;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .spotify-player-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 26px;
   color: #c8b7d0;
 }
 
-.spotify-track1, .spotify-track2, .spotify-track3, .spotify-track4, .spotify-track5, .spotify-track6 {
-  margin: 50px auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.77);
-  border-radius: 10px;
+.spotify-track {
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.77);
   color: #fff;
   max-width: 800px;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
-/* Add individual track-specific styling here */
+.spotify-track:hover {
+  transform: scale(1.01);
+}
+
+/* Track-specific styles */
 .spotify-track1 {
-  border: 3px solid rgba(208, 66, 10, 0.857);  
-  box-shadow: 0 0 100px rgb(141, 182, 222);  
+  border: 3px solid rgba(208, 66, 10, 0.857);
+  box-shadow: 0 0 100px rgb(141, 182, 222);
   background-image: url('nightsky2.jpg');
   animation: neonFlicker 20s infinite;
 }
 
 .spotify-track2 {
-  border: 3px solid rgba(74, 4, 135, 0.857);  
-  box-shadow: 0 0 100px rgb(159, 15, 145);  
+  border: 3px solid rgba(74, 4, 135, 0.857);
+  box-shadow: 0 0 100px rgb(159, 15, 145);
   background-image: url('Butter.jpeg');
 }
 
@@ -57,8 +62,8 @@
 .spotify-track5 {
   border: 3px solid rgba(74, 4, 135, 0.857);
   box-shadow: 0 0 20px rgb(88, 146, 177);
-  background-image: url('indie\ waters.jpg');
-  animation:dramaticSeaBobbing 30s infinite ease-in-out;
+  background-image: url('indie waters.jpg');
+  animation: dramaticSeaBobbing 30s infinite ease-in-out;
 }
 
 .spotify-track6 {
@@ -66,26 +71,43 @@
   box-shadow: 0 0 20px rgb(18, 57, 88);
   background-image: url('ttinms.webp');
 }
+
 .spotify-track7 {
   border: 3px solid rgba(226, 4, 167, 0.857);
   box-shadow: 0 0 20px rgb(194, 1, 162);
   background-image: url('iwfy.jpg');
 }
-.spotify-iframe, .spotify-iframe1, .spotify-iframe5 {
+
+.spotify-track8 {
+  border: 3px solid rgba(200, 0, 0, 0.857);
+  box-shadow: 0 0 80px rgba(255, 0, 0, 0.4);
+  background-image: url('vc.jpg');
+}
+
+/* Embedded player styling */
+.spotify-iframe,
+.spotify-iframe1,
+.spotify-iframe5 {
   border: none;
   width: 100%;
   height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /* Animation Keyframes */
 @keyframes neonFlicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
-      box-shadow: 0 200px 200px rgba(6, 95, 103, 0.817), 0 0 20px rgba(74, 4, 135, 1), 0 0 30px rgba(74, 4, 135, 1), 0 0 40px rgba(74, 4, 135, 1), 0 0 50px rgba(74, 4, 135, 1);
-      border-color: rgba(239, 230, 151, 0.857);
+    box-shadow: 0 200px 200px rgba(6, 95, 103, 0.817),
+                0 0 20px rgba(74, 4, 135, 1),
+                0 0 30px rgba(74, 4, 135, 1),
+                0 0 40px rgba(74, 4, 135, 1),
+                0 0 50px rgba(74, 4, 135, 1);
+    border-color: rgba(239, 230, 151, 0.857);
   }
   20%, 24%, 55% {
-      box-shadow: none;
-      border-color: rgba(230, 239, 192, 0.999);
+    box-shadow: none;
+    border-color: rgba(230, 239, 192, 0.999);
   }
 }
 
@@ -100,25 +122,27 @@
   100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-/* Media Queries for Mobile Screens */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .spotify-player-container {
-      max-width: 90%;
-      padding: 10px;
+    max-width: 95%;
+    padding: 16px;
   }
 
-  .spotify-track1, .spotify-track2, .spotify-track3, .spotify-track4, .spotify-track5, .spotify-track6 {
-      margin: 20px auto;
-      padding: 15px;
-      max-width: 100%;
+  .spotify-track {
+    margin: 20px auto;
+    padding: 16px;
+    max-width: 100%;
   }
 
-  .spotify-iframe, .spotify-iframe1, .spotify-iframe5 {
-      height: 200px; /* Reduce height for smaller screens */
+  .spotify-iframe,
+  .spotify-iframe1,
+  .spotify-iframe5 {
+    height: 200px;
   }
 
   .spotify-player-container h2 {
-      font-size: 18px; /* Smaller heading for mobile */
-      margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 12px;
   }
 }

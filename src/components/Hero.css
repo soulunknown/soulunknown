@@ -1,46 +1,42 @@
 .hero {
-    background-image: url("./wfu.jpeg"); /* Image URL */
-    background-size: contain; /* Make sure the entire image fits inside the section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    
-    width: 300px; /* Adjusted width for desktop */
-    height: 300px; /* Adjusted height for desktop */
-    margin: 20px auto; /* Center it horizontally */
-    
-    border: 10px solid rgba(228, 10, 191, 0.553); /* Thin border for desktop */
-    border-radius: 100px; /* Rounded corners */
-    box-shadow: 0 3px 40px rgba(9, 0, 11, 0.949); /* Soft shadow for depth */
-    
-    display: flex; /* Flexbox to align the content inside */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
-    text-align: center;
-    padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #2c0046;
+  border-radius: 32px;
+  border: 6px solid rgba(228, 10, 191, 0.5);
+  box-shadow: 0 8px 30px rgba(9, 0, 11, 0.6);
+  text-align: center;
+}
+
+/* Image styling */
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional content area */
+.hero-content {
+  margin-top: 20px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 24px 16px;
+    max-width: 90%;
+    border-radius: 20px;
   }
-  
-  .hero p {
-    font-size: 16px; /* Regular paragraph size for desktop */
-    line-height: 1.4; /* Line spacing for readability */
-    max-width: 220px; /* Restricts the width of paragraph text */
-    margin: 0; /* Remove automatic margin */
-    text-align: center; /* Center-align the paragraph */
+
+  .hero-image {
+    max-width: 300px;
   }
-  
-  /* Media Queries for Mobile Devices */
-  @media (max-width: 768px) {
-    .hero {
-      width: 200px; /* Smaller width for mobile */
-      height: 200px; /* Smaller height for mobile */
-      border: 5px solid rgba(227, 13, 191, 0.857); /* Thinner border on mobile */
-      box-shadow: 0 0 10px rgba(235, 14, 217, 0.5); /* Smaller shadow */
-    }
-  
-    .hero p {
-      font-size: 14px; /* Smaller paragraph size for mobile */
-      line-height: 1.3; /* Tighter line spacing */
-      max-width: 180px; /* Restrict the width further on mobile */
-      text-align: center; /* Keep the text centered on mobile */
-    }
-  }
-  
+}
